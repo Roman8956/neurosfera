@@ -1,0 +1,4 @@
+images/logo.png => https://cdn.midjourney.com/2ac36935-5181-41b3-b9dc-9a5ffefdb207/0_3.webp
+images/hero.jpg => https://cdn.midjourney.com/1d3aa334-d1b5-4892-b10c-b08aa2166dcf/0_2.webp
+images/teacher.jpg => https://randomuser.me/api/portraits/men/32.jpg
+images/course1.jpg => https://cdn.midjourney.com/6dd69b14-5a7d-4be4-a478-352c296d7e38/0_2.webp

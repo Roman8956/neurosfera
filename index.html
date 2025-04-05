@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -55,6 +54,9 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      cursor: pointer;
+      border: none;
     }
     .courses-grid {
       display: grid;
@@ -91,6 +93,18 @@
       font-size: 14px;
       color: #aaa;
     }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background-color: #1a1d29;
+      color: white;
+    }
+    textarea {
+      min-height: 100px;
+    }
   </style>
 </head>
 <body>
@@ -100,73 +114,16 @@
       <span style="font-size:24px; font-weight:bold;">НейроСфера</span>
     </div>
     <nav>
-      <a href="#about">О нас</a>
-      <a href="#courses">Курсы</a>
-      <a href="#reviews">Отзывы</a>
-      <a href="#contact">Контакты</a>
+      <a href="index.html#about">О нас</a>
+      <a href="index.html#courses">Курсы</a>
+      <a href="index.html#reviews">Отзывы</a>
+      <a href="index.html#contact">Контакты</a>
     </nav>
   </header>
-
   <section class="hero">
     <h1>Школа Искусственного Интеллекта</h1>
     <p>Город Новый Уренгой</p>
     <a href="#courses" class="btn">Посмотреть курсы</a>
   </section>
-
-  <section id="about">
-    <h2 style="text-align:center;">О нашей школе</h2>
-    <p style="max-width:800px; margin:auto; text-align:center;">
-      НейроСфера — это первая школа искусственного интеллекта в городе Новый Уренгой. Мы обучаем с упором на практику, 
-      работаем с опытными преподавателями, даём реальные навыки и выпускаем специалистов будущего.
-    </p>
-  </section>
-
-  <section id="courses">
-    <h2 style="text-align:center;">Курсы</h2>
-    <div class="courses-grid">
-      <div class="course-card">
-        <img src="images/course1.jpg" alt="Курс 1">
-        <div class="text">Нейросети для начинающих</div>
-        <a href="course1.html">Подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="images/course2.jpg" alt="Курс 2">
-        <div class="text">Нейросети в профессиональной деятельности</div>
-        <a href="course2.html">Подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="images/course3.jpg" alt="Курс 3">
-        <div class="text">Разработка веб-приложений</div>
-        <a href="course3.html">Подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="images/course4.jpg" alt="Курс 4">
-        <div class="text">Промпт-инжиниринг</div>
-        <a href="course4.html">Подробнее</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <h2 style="text-align:center;">Отзывы студентов</h2>
-    <div style="max-width:900px; margin:auto;">
-      <p>“Курсы супер понятные! Я сразу начал применять знания на практике.” — Анастасия</p>
-      <p>“Прошёл промпт-инжиниринг — теперь использую ИИ на работе каждый день.” — Дмитрий</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2 style="text-align:center;">Связаться с нами</h2>
-    <form style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:10px;">
-      <input type="text" placeholder="Ваше имя" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Ваше сообщение" required></textarea>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 НейроСфера — Все права защищены</p>
-  </footer>
 </body>
 </html>

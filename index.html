@@ -143,7 +143,7 @@
 </head>
 <body>
   <header>
-    <div class="logo"><img src="images/logo_light.png" alt="Логотип" style="height:40px; vertical-align: middle; margin-right:10px;">НейроСфера</div>
+    <div class="logo"><img src="images/logo_light.png" alt="Логотип" style="height:60px;"></div>
     <nav>
       <a href="#courses">Курсы</a>
       <a href="#teacher">Преподаватель</a>
@@ -152,21 +152,20 @@
   </header>
 
   <section class="hero">
-    <h1 class="fade-in">Школа Искусственного Интеллекта</h1>
-    <p class="fade-in">Погрузись в мир нейросетей и веб-разработки вместе с профессионалами</p>
+    
   </section>
 
   <section class="section" id="courses">
     <h2>Курсы</h2>
     <div class="courses">
       <a href="course1.html" class="course-card"><img src="images/course1.jpg" alt="Нейросети для начинающих">
-        <div class="text">Нейросети для начинающих</div></a>
+        </a>
       <a href="course2.html" class="course-card"><img src="images/course2.jpg" alt="Нейросети в профессиональной деятельности">
-        <div class="text">Нейросети в профессиональной деятельности</div></a>
+        </a>
       <a href="course3.html" class="course-card"><img src="images/course3.jpg" alt="Разработка веб-приложений">
-        <div class="text">Разработка веб-приложений</div></a>
+        </a>
       <a href="course4.html" class="course-card"><img src="images/course4.jpg" alt="Промпт-инжиниринг">
-        <div class="text">Промпт-инжиниринг</div></a>
+        </a>
     </div>
   </section>
 
@@ -191,6 +190,35 @@
       </div>
       <p style="margin-top:20px; font-size:14px;">&copy; 2025 НейроСфера. Все права защищены.</p>
     </div>
-  </footer>
+  
+<section class="section" id="reviews">
+  <h2>Отзывы студентов</h2>
+  <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
+      <p>"Очень понятные объяснения, особенно понравился курс по нейросетям для начинающих. Спасибо преподавателю!"</p>
+      <p><strong>— Анастасия, студентка</strong></p>
+    </div>
+    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
+      <p>"Прошел курс по промпт-инжинирингу. Уже использую ChatGPT в своих рабочих задачах!"</p>
+      <p><strong>— Дмитрий, менеджер</strong></p>
+    </div>
+    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
+      <p>"Отличный курс по веб-разработке — понятный, структурированный и с практикой!"</p>
+      <p><strong>— Марина, начинающий разработчик</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Связаться с нами</h2>
+  <form style="display:flex; flex-direction:column; gap:15px; max-width:500px; margin:0 auto;">
+    <input type="text" placeholder="Ваше имя" required style="padding:10px; font-size:16px; border-radius:6px; border:1px solid #ccc;">
+    <input type="email" placeholder="Ваш email" required style="padding:10px; font-size:16px; border-radius:6px; border:1px solid #ccc;">
+    <textarea placeholder="Ваше сообщение" required style="padding:10px; font-size:16px; border-radius:6px; border:1px solid #ccc;"></textarea>
+    <button type="submit" style="background:#00b4d8; color:white; padding:12px 20px; border-radius:6px; font-weight:bold; border:none;">Отправить</button>
+  </form>
+</section>
+
+</footer>
 </body>
 </html>

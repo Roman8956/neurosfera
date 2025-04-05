@@ -22,38 +22,46 @@
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 20px;
     }
-    p {
+    p, li {
       font-size: 18px;
       line-height: 1.6;
     }
-    a {
+    ul {
+      padding-left: 20px;
+    }
+    .btn {
       display: inline-block;
       margin-top: 30px;
+      background-color: #00b4d8;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      color: #00b4d8;
       font-weight: bold;
     }
-  
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-  opacity: 0;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-</style>
+    .btn:hover {
+      background-color: #0096c7;
+    }
+  </style>
 </head>
-<body class="fade-in">
-  <div class="container fade-in">
+<body>
+  <div class="container">
     <img src="images/course2.jpg" alt="Нейросети в профессиональной деятельности">
     <h1>Нейросети в профессиональной деятельности</h1>
-    <p>Курс для специалистов, желающих внедрять ИИ в свои проекты. Мы изучим продвинутые архитектуры и реальные кейсы из бизнеса, медицины, образования и других сфер.</p>
-    <a href="index.html">← Назад на главную</a>
+    
+        <p>Этот курс подойдёт тем, кто уже знаком с основами ИИ и хочет внедрить нейросети в реальную практику. 
+        Рассматриваются архитектуры глубокого обучения, работа с большими датасетами, обучение на GPU, оптимизация моделей и применение ИИ в бизнесе, науке и индустрии.</p>
+        <ul>
+          <li>CNN, RNN, Transformer</li>
+          <li>Обработка изображений и текста</li>
+          <li>Примеры использования в реальных проектах</li>
+          <li>Fine-tuning готовых моделей</li>
+        </ul>
+        
+    <a href="index.html#contact" class="btn">Записаться на курс</a>
   </div>
 </body>
 </html>

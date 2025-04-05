@@ -22,38 +22,47 @@
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 20px;
     }
-    p {
+    p, li {
       font-size: 18px;
       line-height: 1.6;
     }
-    a {
+    ul {
+      padding-left: 20px;
+    }
+    .btn {
       display: inline-block;
       margin-top: 30px;
+      background-color: #00b4d8;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      color: #00b4d8;
       font-weight: bold;
     }
-  
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-  opacity: 0;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-</style>
+    .btn:hover {
+      background-color: #0096c7;
+    }
+  </style>
 </head>
-<body class="fade-in">
-  <div class="container fade-in">
+<body>
+  <div class="container">
     <img src="images/course3.jpg" alt="Разработка веб-приложений">
     <h1>Разработка веб-приложений</h1>
-    <p>Вы научитесь создавать интерактивные веб-приложения с нуля. HTML, CSS, JavaScript, подключение API и серверная логика — всё в одном курсе для новичков.</p>
-    <a href="index.html">← Назад на главную</a>
+    
+        <p>Полноценный старт для тех, кто хочет стать веб-разработчиком. 
+        Вы научитесь создавать сайты и веб-приложения с нуля, разберётесь в работе браузера, HTML, CSS и JavaScript. 
+        К концу курса создадите собственный сайт с подключением серверной логики.</p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Работа с формами и DOM</li>
+          <li>Создание адаптивного дизайна</li>
+          <li>Введение в Node.js и работу с API</li>
+        </ul>
+        
+    <a href="index.html#contact" class="btn">Записаться на курс</a>
   </div>
 </body>
 </html>

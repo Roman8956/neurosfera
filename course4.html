@@ -22,38 +22,46 @@
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 20px;
     }
-    p {
+    p, li {
       font-size: 18px;
       line-height: 1.6;
     }
-    a {
+    ul {
+      padding-left: 20px;
+    }
+    .btn {
       display: inline-block;
       margin-top: 30px;
+      background-color: #00b4d8;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      color: #00b4d8;
       font-weight: bold;
     }
-  
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-  opacity: 0;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-</style>
+    .btn:hover {
+      background-color: #0096c7;
+    }
+  </style>
 </head>
-<body class="fade-in">
-  <div class="container fade-in">
+<body>
+  <div class="container">
     <img src="images/course4.jpg" alt="Промпт-инжиниринг">
     <h1>Промпт-инжиниринг</h1>
-    <p>Освойте искусство создания эффективных промптов для языковых моделей (ChatGPT, Claude, Gemini). Этот курс полезен для маркетологов, дизайнеров, программистов и всех, кто работает с ИИ.</p>
-    <a href="index.html">← Назад на главную</a>
+    
+        <p>Научитесь формулировать эффективные запросы к языковым моделям. 
+        Этот курс поможет вам прокачать навык общения с ИИ, использовать его в рабочих задачах, генерации контента и автоматизации.</p>
+        <ul>
+          <li>Типы промптов: zero-shot, few-shot, chain-of-thought</li>
+          <li>Подбор ключевых слов и формулировок</li>
+          <li>Промпт-дизайн для разных моделей (ChatGPT, Claude, Gemini)</li>
+          <li>Практика: генерация кода, контента, анализа данных</li>
+        </ul>
+        
+    <a href="index.html#contact" class="btn">Записаться на курс</a>
   </div>
 </body>
 </html>

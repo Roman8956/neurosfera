@@ -22,38 +22,47 @@
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 20px;
     }
-    p {
+    p, li {
       font-size: 18px;
       line-height: 1.6;
     }
-    a {
+    ul {
+      padding-left: 20px;
+    }
+    .btn {
       display: inline-block;
       margin-top: 30px;
+      background-color: #00b4d8;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      color: #00b4d8;
       font-weight: bold;
     }
-  
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-  opacity: 0;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-</style>
+    .btn:hover {
+      background-color: #0096c7;
+    }
+  </style>
 </head>
-<body class="fade-in">
-  <div class="container fade-in">
+<body>
+  <div class="container">
     <img src="images/course1.jpg" alt="Нейросети для начинающих">
     <h1>Нейросети для начинающих</h1>
-    <p>Этот курс даст вам базовое понимание работы искусственных нейросетей. Вы узнаете, как создаются и обучаются модели, и получите навыки для самостоятельной работы с простыми архитектурами.</p>
-    <a href="index.html">← Назад на главную</a>
+    
+        <p>Курс предназначен для тех, кто только начинает путь в области искусственного интеллекта. 
+        Вы познакомитесь с основами нейронных сетей, научитесь создавать и обучать простые модели с помощью популярных библиотек. 
+        Также вы освоите базовые принципы Python, необходимые для работы с ИИ.</p>
+        <ul>
+          <li>Что такое нейронные сети и как они работают</li>
+          <li>Типы нейронных сетей</li>
+          <li>Практика с библиотекой TensorFlow/Keras</li>
+          <li>Создание своей первой нейросети</li>
+        </ul>
+        
+    <a href="index.html#contact" class="btn">Записаться на курс</a>
   </div>
 </body>
 </html>

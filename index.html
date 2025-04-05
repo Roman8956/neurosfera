@@ -143,7 +143,12 @@
 </head>
 <body>
   <header>
-    <div class="logo"><img src="images/logo_light.png" alt="Логотип" style="height:60px;"></div>
+    
+<div class="logo" style="display:flex; align-items:center; gap:10px;">
+  <img src="images/logo.png" alt="Логотип" style="height:60px;">
+  <span style="font-size:26px; font-weight:bold; color:white;">НейроСфера</span>
+</div>
+
     <nav>
       <a href="#courses">Курсы</a>
       <a href="#teacher">Преподаватель</a>
@@ -151,9 +156,24 @@
     <a href="#contact" class="btn">Записаться</a>
   </header>
 
-  <section class="hero">
-    
-  </section>
+  <section class="section" id="reviews">
+  <h2>Отзывы студентов</h2>
+  <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
+      <p>"Очень понятные объяснения, особенно понравился курс по нейросетям для начинающих. Спасибо преподавателю!"</p>
+      <p><strong>— Анастасия, студентка</strong></p>
+    </div>
+    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
+      <p>"Прошел курс по промпт-инжинирингу. Уже использую ChatGPT в своих рабочих задачах!"</p>
+      <p><strong>— Дмитрий, менеджер</strong></p>
+    </div>
+    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
+      <p>"Отличный курс по веб-разработке — понятный, структурированный и с практикой!"</p>
+      <p><strong>— Марина, начинающий разработчик</strong></p>
+    </div>
+  </div>
+</section>
+
 
   <section class="section" id="courses">
     <h2>Курсы</h2>
@@ -191,23 +211,7 @@
       <p style="margin-top:20px; font-size:14px;">&copy; 2025 НейроСфера. Все права защищены.</p>
     </div>
   
-<section class="section" id="reviews">
-  <h2>Отзывы студентов</h2>
-  <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
-      <p>"Очень понятные объяснения, особенно понравился курс по нейросетям для начинающих. Спасибо преподавателю!"</p>
-      <p><strong>— Анастасия, студентка</strong></p>
-    </div>
-    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
-      <p>"Прошел курс по промпт-инжинирингу. Уже использую ChatGPT в своих рабочих задачах!"</p>
-      <p><strong>— Дмитрий, менеджер</strong></p>
-    </div>
-    <div style="background:#1c1f2a; padding:20px; border-radius:10px;">
-      <p>"Отличный курс по веб-разработке — понятный, структурированный и с практикой!"</p>
-      <p><strong>— Марина, начинающий разработчик</strong></p>
-    </div>
-  </div>
-</section>
+
 
 <section class="section" id="contact">
   <h2>Связаться с нами</h2>

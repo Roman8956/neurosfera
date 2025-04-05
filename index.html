@@ -52,8 +52,7 @@
     .hero {
       text-align: center;
       padding: 60px 20px;
-      background: url('images/hero.jpg') no-repeat center center;
-      background-size: cover;
+      background-color: #000;
     }
     .hero h1 {
       font-size: 48px;
@@ -129,7 +128,17 @@
         font-size: 16px;
       }
     }
-  </style>
+  
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+</style>
 </head>
 <body>
   <header>
@@ -142,38 +151,30 @@
   </header>
 
   <section class="hero">
-    <h1>Школа Искусственного Интеллекта</h1>
-    <p>Погрузись в мир нейросетей и веб-разработки вместе с профессионалами</p>
+    <h1 class="fade-in">Школа Искусственного Интеллекта</h1>
+    <p class="fade-in">Погрузись в мир нейросетей и веб-разработки вместе с профессионалами</p>
   </section>
 
   <section class="section" id="courses">
     <h2>Курсы</h2>
     <div class="courses">
-      <div class="course-card">
-        <img src="images/course1.jpg" alt="Нейросети для начинающих">
-        <div class="text">Нейросети для начинающих</div>
-      </div>
-      <div class="course-card">
-        <img src="images/course2.jpg" alt="Нейросети в профессиональной деятельности">
-        <div class="text">Нейросети в профессиональной деятельности</div>
-      </div>
-      <div class="course-card">
-        <img src="images/course3.jpg" alt="Разработка веб-приложений">
-        <div class="text">Разработка веб-приложений</div>
-      </div>
-      <div class="course-card">
-        <img src="images/course4.jpg" alt="Промпт-инжиниринг">
-        <div class="text">Промпт-инжиниринг</div>
-      </div>
+      <a href="course1.html" class="course-card"><img src="images/course1.jpg" alt="Нейросети для начинающих">
+        <div class="text">Нейросети для начинающих</div></a>
+      <a href="course2.html" class="course-card"><img src="images/course2.jpg" alt="Нейросети в профессиональной деятельности">
+        <div class="text">Нейросети в профессиональной деятельности</div></a>
+      <a href="course3.html" class="course-card"><img src="images/course3.jpg" alt="Разработка веб-приложений">
+        <div class="text">Разработка веб-приложений</div></a>
+      <a href="course4.html" class="course-card"><img src="images/course4.jpg" alt="Промпт-инжиниринг">
+        <div class="text">Промпт-инжиниринг</div></a>
     </div>
   </section>
 
   <section class="section" id="teacher">
     <h2>Преподаватель</h2>
-    <div class="teacher">
+    <div class="teacher fade-in">
       <img src="images/teacher.jpg" alt="Преподаватель И.В. Соков">
       <div class="teacher-name">И.В. Соков</div>
-      <p>Ведущий инженер, эксперт по нейросетям, ML и разработке веб-приложений.</p>
+      <p>Ведущий инженер, эксперт по нейросетям, ML и разработке веб-приложений.</p><p><a style="color:#00b4d8;" href="teacher-video.html">Смотреть видео</a></p>
     </div>
   </section>
 

@@ -1,1 +1,172 @@
-<!DOCTYPE html><html><head><title>temp</title></head><body></body></html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НейроСфера — Школа Искусственного Интеллекта</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #101820;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #1a1d29;
+      padding: 20px;
+      text-align: center;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    header .logo img {
+      height: 60px;
+    }
+    nav a {
+      color: #00b4d8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .hero {
+      text-align: center;
+      background-color: #101820;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #ccc;
+    }
+    .btn {
+      background: #00b4d8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .course-card {
+      background: #fff;
+      color: #111;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .course-card .text {
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .course-card a {
+      display: block;
+      background: #00b4d8;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Логотип НейроСфера">
+      <span style="font-size:24px; font-weight:bold;">НейроСфера</span>
+    </div>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#courses">Курсы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Школа Искусственного Интеллекта</h1>
+    <p>Город Новый Уренгой</p>
+    <a href="#courses" class="btn">Посмотреть курсы</a>
+  </section>
+
+  <section id="about">
+    <h2 style="text-align:center;">О нашей школе</h2>
+    <p style="max-width:800px; margin:auto; text-align:center;">
+      НейроСфера — это первая школа искусственного интеллекта в городе Новый Уренгой. Мы обучаем с упором на практику, 
+      работаем с опытными преподавателями, даём реальные навыки и выпускаем специалистов будущего.
+    </p>
+  </section>
+
+  <section id="courses">
+    <h2 style="text-align:center;">Курсы</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="images/course1.jpg" alt="Курс 1">
+        <div class="text">Нейросети для начинающих</div>
+        <a href="course1.html">Подробнее</a>
+      </div>
+      <div class="course-card">
+        <img src="images/course2.jpg" alt="Курс 2">
+        <div class="text">Нейросети в профессиональной деятельности</div>
+        <a href="course2.html">Подробнее</a>
+      </div>
+      <div class="course-card">
+        <img src="images/course3.jpg" alt="Курс 3">
+        <div class="text">Разработка веб-приложений</div>
+        <a href="course3.html">Подробнее</a>
+      </div>
+      <div class="course-card">
+        <img src="images/course4.jpg" alt="Курс 4">
+        <div class="text">Промпт-инжиниринг</div>
+        <a href="course4.html">Подробнее</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 style="text-align:center;">Отзывы студентов</h2>
+    <div style="max-width:900px; margin:auto;">
+      <p>“Курсы супер понятные! Я сразу начал применять знания на практике.” — Анастасия</p>
+      <p>“Прошёл промпт-инжиниринг — теперь использую ИИ на работе каждый день.” — Дмитрий</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center;">Связаться с нами</h2>
+    <form style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:10px;">
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Ваше сообщение" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 НейроСфера — Все права защищены</p>
+  </footer>
+</body>
+</html>

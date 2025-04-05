@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НейроСфера</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #101820;
+      color: #fff;
+    }
+    header {
+      background-color: #1c1f2a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    .btn {
+      background: #00b4d8;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #0096c7;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #000;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+    .course-card {
+      background: #1f2a38;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+    .course-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .course-card .text {
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+    }
+    .teacher {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .teacher img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00b4d8;
+      margin-bottom: 15px;
+    }
+    .teacher-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1c1f2a;
+      color: #aaa;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">НейроСфера</div>
+    <nav>
+      <a href="#courses">Курсы</a>
+      <a href="#teacher">Преподаватель</a>
+    </nav>
+    <a href="#contact" class="btn">Записаться</a>
+  </header>
+
+  <section class="hero">
+    <h1 class="fade-in">Школа Искусственного Интеллекта</h1>
+    <p class="fade-in">Погрузись в мир нейросетей и веб-разработки вместе с профессионалами</p>
+  </section>
+
+  <section class="section" id="courses">
+    <h2>Курсы</h2>
+    <div class="courses">
+      <a href="course1.html" class="course-card"><img src="images/course1.jpg" alt="Нейросети для начинающих">
+        <div class="text">Нейросети для начинающих</div></a>
+      <a href="course2.html" class="course-card"><img src="images/course2.jpg" alt="Нейросети в профессиональной деятельности">
+        <div class="text">Нейросети в профессиональной деятельности</div></a>
+      <a href="course3.html" class="course-card"><img src="images/course3.jpg" alt="Разработка веб-приложений">
+        <div class="text">Разработка веб-приложений</div></a>
+      <a href="course4.html" class="course-card"><img src="images/course4.jpg" alt="Промпт-инжиниринг">
+        <div class="text">Промпт-инжиниринг</div></a>
+    </div>
+  </section>
+
+  <section class="section" id="teacher">
+    <h2>Преподаватель</h2>
+    <div class="teacher fade-in">
+      <img src="images/teacher.jpg" alt="Преподаватель И.В. Соков">
+      <div class="teacher-name">И.В. Соков</div>
+      <p>Ведущий инженер, эксперт по нейросетям, ML и разработке веб-приложений.</p><p><a style="color:#00b4d8;" href="teacher-video.html">Смотреть видео</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 НейроСфера. Все права защищены.
+  </footer>
+</body>
+</html>
